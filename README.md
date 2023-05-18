@@ -11,17 +11,14 @@ This is a backend application for a movie festival app. It provides APIs for man
 
 1. Clone the repository:
 
-```shell
 git clone https://github.com/your-username/movie-festival-app.git
 
 2. Navigate to the project directory:
 
-```shell
 cd movie-festival-app
 
 3. Install the dependencies:
 
-```shell
 go mod download
 
 4. Set up the database:
@@ -31,7 +28,6 @@ Update the database connection details in the main.go file.
 
 5. Run the application:
 
-```shell
 go run main.go
 
 The application will be accessible at http://localhost:8080.
