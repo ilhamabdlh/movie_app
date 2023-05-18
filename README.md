@@ -32,94 +32,107 @@ go run main.go
 
 The application will be accessible at http://localhost:8080.
 
-API Endpoints
-Admin APIs
-Create Movie
-
-Endpoint: POST /admin/movies
-Description: Create a new movie.
+## API Endpoints
+## Admin APIs
+### Create Movie
+- Endpoint: POST /admin/movies
+- Description: Create a new movie.
 Request Body: JSON representation of the movie.
 Response: Created movie details.
-Update Movie
 
-Endpoint: PUT /admin/movies/{id}
-Description: Update an existing movie.
-Request Body: JSON representation of the updated movie.
-Response: Updated movie details.
-Get Most Viewed Movie
+### Update Movie
 
-Endpoint: GET /admin/movies/most-viewed
-Description: Get the most viewed movie.
-Response: Details of the most viewed movie.
-Get Most Viewed Genre
+- Endpoint: PUT /admin/movies/{id}
+- Description: Update an existing movie.
+- Request Body: JSON representation of the updated movie.
+- Response: Updated movie details.
 
-Endpoint: GET /admin/movies/most-viewed-genre
-Description: Get the most viewed genre.
-Response: Details of the most viewed genre.
-User APIs
-List Movies
+### Get Most Viewed Movie
 
-Endpoint: GET /movies
-Description: Get a list of all movies.
-Response: List of movies.
-Search Movies
+- Endpoint: GET /admin/movies/most-viewed
+- Description: Get the most viewed movie.
+- Response: Details of the most viewed movie.
 
-Endpoint: GET /movies/search
-Description: Search for movies based on title, description, artist, or genre.
-Query Parameters: Search criteria.
-Response: List of matching movies.
-Track Viewership
+### Get Most Viewed Genre
 
-Endpoint: GET /movies/viewership/{id}
-Description: Get viewership details of a movie by ID.
-Path Parameter: Movie ID.
-Response: Viewership details.
-Create Viewership
+- Endpoint: GET /admin/movies/most-viewed-genre
+- Description: Get the most viewed genre.
+- Response: Details of the most viewed genre.
 
-Endpoint: POST /movies/viewership
-Description: Create viewership record for a movie.
-Request Body: JSON representation of viewership details.
-Response: Created viewership details.
-Authenticated User APIs
-Register
+## User APIs
+### List Movies
 
-Endpoint: POST /users/register
-Description: Register a new user.
-Request Body: User registration details.
-Response: User registration confirmation.
-Login
+- Endpoint: GET /movies
+- Description: Get a list of all movies.
+- Response: List of movies.
 
-Endpoint: POST /users/login
-Description: Log in as an existing user.
-Request Body: User login credentials.
-Response: Login token.
-Logout
+### Search Movies
 
-Endpoint: POST /users/logout
-Description: Log out the currently authenticated user.
-Response: Logout confirmation.
-List Votes
+- Endpoint: GET /movies/search
+- Description: Search for movies based on title, description, artist, or genre.
+- Query Parameters: Search criteria.
+- Response: List of matching movies.
 
-Endpoint: GET /users/votes
-Description: Get a list of votes by the authenticated user.
-Response: List of votes.
-Vote Movie
+### Track Viewership
 
-Endpoint: POST /users/vote/{id}
-Description: Vote for a movie by ID.
-Path Parameter: Movie ID.
-Response: Vote confirmation.
-Unvote Movie
+- Endpoint: GET /movies/viewership/{id}
+- Description: Get viewership details of a movie by ID.
+- Path Parameter: Movie ID.
+- Response: Viewership details.
 
-Endpoint: POST /users/unvote/{id}
-Description: Remove the vote for a movie by ID.
-Path Parameter: Movie ID.
-Response: Unvote confirmation.
-Get Most Voted Movie
+### Create Viewership
 
-Endpoint: GET /users/most-voted-movie
-Description: Get the most voted movie.
-Response: Details of the most voted movie.
+- Endpoint: POST /movies/viewership
+- Description: Create viewership record for a movie.
+- Request Body: JSON representation of viewership details.
+- Response: Created viewership details.
+- Authenticated User APIs
+
+### Register
+
+- Endpoint: POST /users/register
+- Description: Register a new user.
+- Request Body: User registration details.
+- Response: User registration confirmation.
+
+### Login
+
+- Endpoint: POST /users/login
+- Description: Log in as an existing user.
+- Request Body: User login credentials.
+- Response: Login token.
+
+### Logout
+
+- Endpoint: POST /users/logout
+- Description: Log out the currently authenticated user.
+- Response: Logout confirmation.
+
+### List Votes
+
+- Endpoint: GET /users/votes
+- Description: Get a list of votes by the authenticated user.
+- Response: List of votes.
+
+### Vote Movie
+
+- Endpoint: POST /users/vote/{id}
+- Description: Vote for a movie by ID.
+- Path Parameter: Movie ID.
+- Response: Vote confirmation.
+
+### Unvote Movie
+
+- Endpoint: POST /users/unvote/{id}
+- Description: Remove the vote for a movie by ID.
+- Path Parameter: Movie ID.
+- Response: Unvote confirmation.
+
+### Get Most Voted Movie
+
+- Endpoint: GET /users/most-voted-movie
+- Description: Get the most voted movie.
+- Response: Details of the most voted movie.
 
 
 
